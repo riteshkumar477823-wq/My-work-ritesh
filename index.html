@@ -197,7 +197,7 @@
         const resultDiv = document.getElementById('result');
 
         const secretCode = 'Mehek'; 
-        const nextPageUrl = 'home.html';
+        const nextPage = 'home.html';
 
         form.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -209,7 +209,7 @@
                 form.style.transform = "scale(1.1)";
                 form.style.opacity = "0";
                 setTimeout(() => {
-                    window.location.href = nextPageUrl;
+                    window.location.href = nextPage;
                 }, 500);
             } else {
                 resultDiv.textContent = 'Oops! That\'s not the right name.';
